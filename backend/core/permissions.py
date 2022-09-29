@@ -7,6 +7,7 @@ class IsSubscriber(BasePermission):
         """
         Takes a user and a group name, and returns `True` if the user is in that group.
         """
+        print(request.user)
         try:
             return Group.objects.get(name='subscribers').user_set.filter(id=request.user.id).exists()
         except Group.DoesNotExist:

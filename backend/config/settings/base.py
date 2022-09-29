@@ -49,7 +49,7 @@ THIRD_PARTY = [
     "ckeditor",
 ]
 
-LOCAL_APPS = ["users", "posts", "videos"]
+LOCAL_APPS = ["users", "posts", "videos","notes","files"]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY + LOCAL_APPS
 
